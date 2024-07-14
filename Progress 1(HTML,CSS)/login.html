@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+ <html lang="id"> 
+    <head> <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Halaman Login</title> 
+          <link rel="stylesheet" href="style.css"> 
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+          <style>
+            body {
+font-family: 'Roboto', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f9f9f9;
+}
+
+.container {
+display: flex;
+max-width: 1200px;
+width: 100%;
+background-color: #fff;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.login-container {
+padding: 60px;
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.login-container h2 {
+margin-bottom: 24px;
+font-size: 1.5em;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group input {
+width: 100%;
+padding: 15px;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 1em;
+}
+
+.form-group input:focus {
+border-color: #007bff;
+}
+
+.form-group button {
+width: 100%;
+padding: 15px;
+background-color: #0056b3;
+color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 1em;
+cursor: pointer;
+}
+
+.form-group button:hover {
+background-color: #0056b3;
+}
+
+.form-footer {
+margin-top: 20px;
+text-align: center;
+}
+
+.form-footer a {
+color: #0060A5;
+text-decoration: none;
+}
+
+.form-footer a:hover {
+text-decoration: underline;
+}
+
+.image-container {
+flex: 1;
+background: url('img/vector-background.png') no-repeat center center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+}
+
+.image-container .main-image {
+width: 80%;
+max-width: 400px;
+}
+
+.image-container .small-image {
+position: absolute;
+bottom: 10px;
+right: 90px;
+width: 110px;
+background-color: transparent;
+}
+          </style>
+         </head>
+          
+          <body> 
+            <div class="container">
+                 <div class="login-container"> 
+                    <h2>Masuk</h2> <form> 
+                        <div class="form-group"> <input type="email" id="email" placeholder="Masukkan Alamat Email"> </div> 
+                        <div class="form-group"> <input type="password" id="password" placeholder="Masukkan Kata Sandi"> </div> <div class="form-group"> <button type="submit">Masuk</button> </div> 
+                        <div class="form-footer"> Belum memiliki akun? <a href="#">Daftar</a> </div> 
+                    </form> </div> <div class="image-container"> <img src="img/loginpana.png" alt="Ilustrasi" class="main-image"> <img src="img/100k.png" alt="100k" class="small-image"> </div> </div> </body> </html>

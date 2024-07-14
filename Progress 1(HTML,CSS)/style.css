@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    }
+    
+    .container {
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        }
+        
+        .form-container {
+        padding: 60px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+        
+        .logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        }
+        
+        .logo img {
+        width: 150px; 
+        margin-right: 10px;
+        }
+        
+        .logo span {
+        font-weight: bold;
+        font-size: 1.5em; 
+        }
+        
+        .form-container h2 {
+        margin-bottom: 24px;
+        font-size: 1.5em;
+        }
+        
+        .form-group {
+        margin-bottom: 20px;
+        }
+        
+        .form-group input {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+        }
+        
+        .form-group input:focus {
+        border-color: #007bff;
+        }
+        
+        .form-group button {
+        width: 107%;
+        padding: 15px;
+        background-color: #0056b3;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        }
+        
+        .form-group button:hover {
+        background-color: #0056b3;
+        }
+        
+        .form-footer {
+        margin-top: 20px;
+        text-align: center;
+        }
+        
+        .form-footer a {
+        color: #0060A5;
+        text-decoration: none;
+        }
+        
+        .form-footer a:hover {
+        text-decoration: underline;
+        }
+        
+        .terms {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #555;
+        }
+        
+        .terms input {
+        margin-right: 10px;
+        }
+        
+        .terms a {
+        color: #0060A5;
+        text-decoration: none;
+        }
+        
+        .terms a:hover {
+        text-decoration: underline;
+        }
+        
+        .image-container {
+        flex: 1;
+        background: url('img/Vector.png'); 
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative; 
+        }
+        
+        .image-container .main-image {
+        width: 80%;
+        max-width: 400px;
+        }
+        
+        .image-container .small-image {
+        position: absolute; 
+        bottom: 10px; 
+        right: 90px; 
+        width: 110px; 
+        background-color: transparent; 
+        }

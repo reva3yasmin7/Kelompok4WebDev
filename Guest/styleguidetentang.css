@@ -1,0 +1,29 @@
+:root {
+    --neutrals-100: rgba(37, 50, 75, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    --neutrals-40: rgba(168, 173, 183, 1);
+    --neutrals-0: rgba(255, 255, 255, 1);
+    --neutrals-20: rgba(214, 221, 235, 1);
+    --foundation-bluenormal: rgba(0, 160, 251, 1);
+    --brandsprimary: rgba(70, 64, 222, 1);
+    --neutrals-80: rgba(81, 91, 111, 1);
+    --body-normal-medium-font-family: "Epilogue", Helvetica;
+    --body-normal-medium-font-weight: 500;
+    --body-normal-medium-font-size: 16px;
+    --body-normal-medium-letter-spacing: 0px;
+    --body-normal-medium-line-height: 160.0000023841858%;
+    --body-normal-medium-font-style: normal;
+    --button-normal-font-family: "Epilogue", Helvetica;
+    --button-normal-font-weight: 700;
+    --button-normal-font-size: 16px;
+    --button-normal-letter-spacing: 0px;
+    --button-normal-line-height: 160.0000023841858%;
+    --button-normal-font-style: normal;
+    --body-normal-regular-font-family: "Epilogue", Helvetica;
+    --body-normal-regular-font-weight: 400;
+    --body-normal-regular-font-size: 16px;
+    --body-normal-regular-letter-spacing: 0px;
+    --body-normal-regular-line-height: 160.0000023841858%;
+    --body-normal-regular-font-style: normal;
+  }
+  

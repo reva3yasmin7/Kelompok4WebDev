@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="landing-page-user">
+      <div class="div">
+        <div class="overlap">
+          <div class="overlap-group">
+            <div class="overlap-2">
+              <img class="element" src="img/2-1.png" />
+              <div class="title">
+                <div class="text-wrapper">Temukan Lowongan Pekerjaan</div>
+                <div class="group">
+                  <img class="vector" src="img/vector.png" /> <img class="img" src="img/vector.svg" />
+                </div>
+              </div>
+              <p class="p">lowongan yang tepat dengan cara yang benar</p>
+              <div class="rectangle"></div>
+              <div class="rectangle-2"></div>
+              <div class="text-wrapper-2">Bengkulu, Bengkulu</div>
+              <div class="text-wrapper-3">Rentang Gaji</div>
+              <img class="arrow-drop-down" src="img/arrow-drop-down.svg" />
+              <img class="arrow-drop-down-2" src="img/arrow-drop-down.svg" />
+              <div class="rectangle-3"></div>
+              <div class="text-wrapper-4">Cari</div>
+            </div>
+            <div class="rectangle-4"></div>
+            <div class="overlap-3">
+              <div class="text-wrapper-5">Cari Lowongan</div>
+              <img class="search" src="img/search.svg" />
+            </div>
+          </div>
+          <div class="top-nav">
+            <div class="frame">
+              <img class="black-and-white" src="img/black-and-white-collection-16.png" />
+              <div class="text-wrapper-6">carikerja</div>
+            </div>
+            <div class="menu">
+              <div class="menu-2">
+                <div class="top-menu-wrapper">
+                  <div class="top-menu">
+                    <div class="caption">Perusahaan</div>
+                    <div class="rectangle-5"></div>
+                  </div>
+                </div>
+                <div class="div-wrapper">
+                  <div class="top-menu-2">
+                    <div class="caption-2">Lowongan Kerja</div>
+                    <div class="rectangle-5"></div>
+                  </div>
+                </div>
+                <div class="frame-2">
+                  <div class="top-menu-3">
+                    <div class="caption-3">Tentang</div>
+                    <div class="rectangle-6"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="button"><div class="caption-4">Budi</div></button>
+            </div>
+            <img class="menu-3" src="img/menu.svg" />
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="job-seeker-testimoni">
+            <span class="span">Job Seeker </span> <span class="text-wrapper-7">Testimoni</span>
+          </p>
+          <div class="overlap-group-wrapper">
+            <div class="overlap-group-2">
+              <div class="testimonial-2">
+                <div class="testimonial-card">
+                  <div class="top">
+                    <img class="rating" src="img/rating.svg" />
+                    <p class="text-wrapper-8">
+                      “Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus
+                      est.”
+                    </p>
+                  </div>
+                  <div class="bottom">
+                    <div class="customer">
+                      <img class="img-2" src="img/image.png" />
+                      <div class="info">
+                        <div class="text-wrapper-9">Fedi Nuril</div>
+                        <div class="text-wrapper-10">Client</div>
+                      </div>
+                    </div>
+                    <img class="img-2" src="img/image.svg" />
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div class="top">
+                    <img class="rating" src="img/rating-3.svg" />
+                    <p class="text-wrapper-8">
+                      “Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus
+                      est.”
+                    </p>
+                  </div>
+                  <div class="bottom">
+                    <div class="customer">
+                      <img class="img-2" src="img/image-2.png" />
+                      <div class="info">
+                        <div class="text-wrapper-9">Ahmad Muhsin</div>
+                        <div class="text-wrapper-10">Client</div>
+                      </div>
+                    </div>
+                    <img class="img-2" src="img/quote.svg" />
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div class="top">
+                    <img class="rating" src="img/rating-2.svg" />
+                    <p class="text-wrapper-8">
+                      “Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus
+                      est.”
+                    </p>
+                  </div>
+                  <div class="bottom">
+                    <div class="customer">
+                      <img class="img-2" src="img/image-3.png" />
+                      <div class="info">
+                        <div class="text-wrapper-9">Bella Cantika</div>
+                        <div class="text-wrapper-10">Client</div>
+                      </div>
+                    </div>
+                    <img class="img-2" src="img/quote-2.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="arrow">
+                <div class="icon-button"><img class="fi-arrow-right" src="img/fi-arrow-right-2.svg" /></div>
+                <div class="fi-arrow-right-wrapper"><img class="img-3" src="img/fi-arrow-right.svg" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-4">
+          <div class="landing-page">
+            <div class="cari-sesuai-kategori-wrapper">
+              <p class="cari-sesuai-kategori">
+                <span class="text-wrapper-11">Cari sesuai </span> <span class="text-wrapper-7">Kategori</span>
+              </p>
+            </div>
+            <div class="content">
+              <div class="row">
+                <div class="job-category">
+                  <div class="icon">
+                    <div class="desain-tanpa-judul">
+                      <img class="desain-tanpa-judul-2" src="img/desain-tanpa-judul-2-1.png" />
+                    </div>
+                  </div>
+                  <div class="category-name">
+                    <div class="text-wrapper-12">Musisi</div>
+                    <div class="div-2"><img class="img-3" src="img/icon.svg" /></div>
+                  </div>
+                </div>
+                <div class="job-category">
+                  <div class="desain-tanpa-judul-3"></div>
+                  <div class="category-name">
+                    <div class="text-wrapper-12">Designer</div>
+                    <div class="div-2"><img class="img-3" src="img/icon.svg" /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-2">
+                <div class="job-category">
+                  <img class="img-4" src="img/3d.png" />
+                  <div class="category-name">
+                    <div class="text-wrapper-13">Web Development</div>
+                    <div class="div-2"><img class="img-3" src="img/icon.svg" /></div>
+                  </div>
+                </div>
+                <div class="job-category-2">
+                  <img class="img-4" src="img/homework.png" />
+                  <div class="category-name">
+                    <div class="text-wrapper-13">Penerjemah</div>
+                    <div class="div-2"><img class="img-3" src="img/icon.svg" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-3">
+            <div class="pencarian-terkini-wrapper">
+              <p class="pencarian-terkini">
+                <span class="text-wrapper-11">Pencarian&nbsp;&nbsp;</span> <span class="text-wrapper-7">Terkini</span>
+              </p>
+            </div>
+            <div class="row-wrapper">
+              <div class="row-3">
+                <div class="job-category-3">
+                  <div class="div-2">
+                    <img class="mask-group" src="img/mask-group-3.png" />
+                    <div class="text-wrapper-14">Front-end Engineer</div>
+                  </div>
+                  <div class="category-name-2">
+                    <div class="text-wrapper-15">Danone</div>
+                    <div class="frame-4">
+                      <div class="text-wrapper-16">Kaur</div>
+                      <div class="ellipse"></div>
+                      <div class="text-wrapper-16">Bengkulu</div>
+                    </div>
+                    <div class="div-2">
+                      <p class="text-wrapper-17">Kami mencari penjahit<br />baju seragam untuk Pesta...</p>
+                      <img class="img-3" src="img/icon-2.svg" />
+                    </div>
+                    <div class="frame-5">
+                      <div class="label"><div class="caption-5">UMKM</div></div>
+                      <div class="caption-wrapper"><div class="caption-6">Toko Pakaian</div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-category-3">
+                  <div class="div-2">
+                    <img class="mask-group" src="img/mask-group-2.png" />
+                    <div class="text-wrapper-14">Back-end Engineer</div>
+                  </div>
+                  <div class="category-name-2">
+                    <div class="text-wrapper-15">Bank Mandiri</div>
+                    <div class="frame-4">
+                      <div class="text-wrapper-16">Kerinci</div>
+                      <div class="ellipse"></div>
+                      <div class="text-wrapper-16">Jambi</div>
+                    </div>
+                    <div class="div-2">
+                      <p class="text-wrapper-17">Kami mencari pianis untuk<br />cafe kami yang berada...</p>
+                      <img class="img-3" src="img/icon-2.svg" />
+                    </div>
+                    <div class="frame-5">
+                      <div class="label"><div class="caption-5">Musisi</div></div>
+                      <div class="caption-wrapper"><div class="caption-6">Kafe</div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-category-3">
+                  <div class="div-2">
+                    <img class="mask-group" src="img/mask-group-4.png" />
+                    <div class="text-wrapper-14">Software Developer</div>
+                  </div>
+                  <div class="category-name-2">
+                    <div class="text-wrapper-15">JT International</div>
+                    <div class="frame-4">
+                      <div class="text-wrapper-16">Metro</div>
+                      <div class="ellipse"></div>
+                      <div class="text-wrapper-16">Lampung</div>
+                    </div>
+                    <div class="div-2">
+                      <p class="text-wrapper-17">Kami mencari Penerjemah<br />untuk dokumen kami dari...</p>
+                      <img class="img-3" src="img/icon-2.svg" />
+                    </div>
+                    <div class="frame-5">
+                      <div class="label"><div class="caption-5">Penerjemah</div></div>
+                      <div class="caption-wrapper"><div class="caption-6">Kantor</div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-category-3">
+                  <div class="div-2">
+                    <img class="mask-group" src="img/mask-group.png" />
+                    <div class="text-wrapper-14">UI/X Designer</div>
+                  </div>
+                  <div class="category-name-2">
+                    <div class="text-wrapper-15">Gojek</div>
+                    <div class="frame-4">
+                      <div class="text-wrapper-16">pariaman</div>
+                      <div class="ellipse"></div>
+                      <div class="text-wrapper-16">Sumatera Barat</div>
+                    </div>
+                    <div class="div-2">
+                      <p class="text-wrapper-17">Kami mencari penyanyi untuk<br />mengisi acara kami...</p>
+                      <img class="img-3" src="img/icon-2.svg" />
+                    </div>
+                    <div class="frame-5">
+                      <div class="label"><div class="caption-5">Musisi</div></div>
+                      <div class="caption-wrapper"><div class="caption-6">Pribadi</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="social-media-icons">
+            <div class="twitter">
+              <div class="overlap-group-3">
+                <div class="ellipse-2"></div>
+                <img class="twitter-2" src="img/twitter.svg" />
+              </div>
+            </div>
+            <div class="linked-in">
+              <div class="overlap-group-3">
+                <div class="ellipse-2"></div>
+                <img class="linked-in-2" src="img/linked-in.svg" />
+              </div>
+            </div>
+            <div class="dribbble">
+              <div class="overlap-group-3">
+                <div class="ellipse-2"></div>
+                <img class="dribbble-2" src="img/dribbble.svg" />
+              </div>
+            </div>
+            <div class="instagram">
+              <div class="overlap-group-3">
+                <div class="ellipse-2"></div>
+                <img class="instagram-2" src="img/instagram.svg" />
+              </div>
+            </div>
+            <div class="facebook">
+              <div class="overlap-group-3">
+                <div class="ellipse-2"></div>
+                <img class="facebook-2" src="img/facebook.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="copyright"><p class="text-wrapper-18">2024 @ carikerja. All rights reserved.</p></div>
+          <div class="divider"><img class="line" src="img/line.svg" /></div>
+          <div class="right">
+            <div class="subscribe">
+              <div class="frame-6">
+                <input class="input" placeholder="Alamat Email" type="email" />
+                <button class="button-2"><div class="caption-7">Langganan</div></button>
+              </div>
+            </div>
+            <p class="text-wrapper-19">Berita pekerjaan terbaru, artikel, dikirim ke kotak masuk Anda setiap minggu.</p>
+            <div class="text-wrapper-20">Dapatkan informasi pekerjaan</div>
+          </div>
+          <div class="menu-4">
+            <div class="second-column">
+              <div class="description">
+                <div class="text-wrapper-21">Contact Us</div>
+                <div class="text-wrapper-22">Updates</div>
+                <div class="text-wrapper-23">Guide</div>
+                <div class="text-wrapper-24">Help Docs</div>
+              </div>
+              <div class="text-wrapper-25">Resources</div>
+            </div>
+            <div class="first-column">
+              <div class="description-2">
+                <div class="text-wrapper-26">Companies</div>
+                <div class="text-wrapper-27">Pricing</div>
+                <div class="text-wrapper-27">Terms</div>
+                <div class="text-wrapper-27">Advice</div>
+                <div class="text-wrapper-27">Privacy Policy</div>
+              </div>
+              <div class="text-wrapper-28">About</div>
+            </div>
+          </div>
+          <div class="left">
+            <p class="text-wrapper-29">
+              Platform hebat untuk pencari kerja atau bakat yang memiliki minat terhadap startup. Temukan pekerjaan
+              impian Anda dengan lebih mudah.
+            </p>
+          </div>
+          <div class="frame-7">
+            <img class="black-and-white" src="img/black-and-white-collection-16-2.png" />
+            <div class="text-wrapper-30">carikerja</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

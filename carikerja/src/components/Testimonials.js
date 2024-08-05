@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import starIcon from '../assets/star 1.png'; // Ensure this path is correct
 import leftArrow from '../assets/left-arrow.svg';
 import rightArrow from '../assets/right-arrow.svg';
-import chatBot from '../assets/chat-bot-icon.svg';
+
 import fediImage from '../assets/fedi.png';
 import ahmadImage from '../assets/ahmad.png';
 import bellaImage from '../assets/bella.png';
@@ -40,7 +40,7 @@ function Testimonials() {
         <Row className="justify-content-center">
           <Col md={8} className="text-center">
             <h2 className="section-title">
-              Testimoni <span className="text-primary">APA??</span>
+               <span className="text-primary">Testimoni</span>
             </h2>
           </Col>
         </Row>
@@ -71,12 +71,9 @@ function Testimonials() {
               </Card>
             </Col>
           ))}
-          <Button variant="link" className="arrow-button right-arrow">
-            <img src={rightArrow} alt="Right Arrow" />
-          </Button>
+          
         </Row>
       </Container>
-      <img src={chatBot} alt="Chat Bot" className="chat-bot-icon" />
     </div>
   );
 }

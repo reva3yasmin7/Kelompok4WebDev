@@ -1,6 +1,7 @@
 // src/components/Footer.js
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import logoImage from '../assets/carikerja1.png';
 
 function Footer() {
   return (
@@ -8,8 +9,13 @@ function Footer() {
       <Container>
         <Row>
           <Col md={6}>
-            <h5>carikerja</h5>
-            <p>Platform hebat untuk pencari kerja atau bakat yang memiliki minat terhadap startup. Temukan pekerjaan impian Anda dengan lebih mudah.</p>
+              <img src={logoImage} alt="carikerja" className="logo" />
+              carikerja
+              <div className='mt-3'>
+              <p>Platform hebat untuk pencari kerja atau 
+                bakat yang <br></br>
+               memiliki minat terhadap startup. Temukan pekerjaan <br></br>impian Anda dengan lebih mudah.</p>
+              </div>
           </Col>
           <Col md={3}>
             <h5>About</h5>

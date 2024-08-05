@@ -13,9 +13,9 @@ function CustomNavbar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto custom-nav">
-  <Nav.Link href="#home">Perusahaan</Nav.Link>
-  <Nav.Link href="#jobs">Lowongan Kerja</Nav.Link>
+          <Nav className="me-auto custom-nav" style={{ marginLeft: 'auto' }}>
+  <Nav.Link href="#home" style={{ marginRight: '20px' }}>Perusahaan</Nav.Link>
+  <Nav.Link href="#jobs" style={{ marginRight: '20px' }}>Lowongan Kerja</Nav.Link>
   <Nav.Link href="#about">Tentang</Nav.Link>
 </Nav>
             <Nav>

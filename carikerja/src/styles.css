@@ -129,26 +129,47 @@ body {
 }
 .footer {
   background-color: #007bff;
+  color: white;
 }
 
 .footer .text-white {
   color: #ffffff !important;
 }
+.footer .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer .list-unstyled li {
+  margin-bottom: 10px;
+}
 
 .footer a {
-  color: #ffffff;
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer h5 {
+  margin-bottom: 15px;
 }
 
 .footer p {
-  margin: 0;
+  margin-bottom: 0;
 }
 
-.footer form .form-control {
+.footer .form-control {
   border-radius: 20px;
   padding: 10px 20px;
+  max-width: 200px;
 }
 
-.footer form .btn-secondary {
+.footer .btn-secondary {
   border-radius: 20px;
   padding: 10px 20px;
 }
@@ -369,5 +390,26 @@ body {
 .custom-nav .nav-link.active {
   color: #007bff; 
 }
+.btn-primaryfooter{
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #d1d1d1;
+}
+
 
 

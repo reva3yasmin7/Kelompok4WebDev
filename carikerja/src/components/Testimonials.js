@@ -1,46 +1,83 @@
 // src/components/Testimonials.js
-import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import React from 'react';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import starIcon from '../assets/star 1.png'; // Ensure this path is correct
+import leftArrow from '../assets/left-arrow.svg';
+import rightArrow from '../assets/right-arrow.svg';
+import chatBot from '../assets/chat-bot-icon.svg';
+import fediImage from '../assets/fedi.png';
+import ahmadImage from '../assets/ahmad.png';
+import bellaImage from '../assets/bella.png';
 
-const mockData = [
-  { name: 'Fedi Nuril', feedback: 'Ut ullamcorper hendrerit tempor.', image: 'path/to/image-fedi.png' },
-  { name: 'Ahmad Muhsin', feedback: 'Aliquam in rutrum dui.', image: 'path/to/image-ahmad.png' },
-  { name: 'Bella Cantika', feedback: 'Maecenas ac placerat metus.', image: 'path/to/image-bella.png' }
+const testimonials = [
+  {
+    name: 'Fedi Nuril',
+    role: 'Client',
+    feedback: 'Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.',
+    image: fediImage,
+    rating: 5,
+  },
+  {
+    name: 'Ahmad Muhsin',
+    role: 'Client',
+    feedback: 'Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.',
+    image: ahmadImage,
+    rating: 5,
+  },
+  {
+    name: 'Bella Cantika',
+    role: 'Client',
+    feedback: 'Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.',
+    image: bellaImage,
+    rating: 5,
+  },
 ];
 
 function Testimonials() {
-  const [testimonials, setTestimonials] = useState([]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setTestimonials(mockData);
-    }, 1000);
-  }, []);
-
   return (
-    <Container className="my-5">
-      <h2 className="text-primary">Testimoni APA??</h2>
-      <Row>
-        {testimonials.map((testimonial, index) => (
-          <Col md={4} key={index} className="mb-4">
-            <Card className="text-center">
-              <Card.Body>
-                <Card.Text>{testimonial.feedback}</Card.Text>
-                <Card.Footer className="d-flex flex-column align-items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="rounded-circle mb-2"
-                    width="50"
-                  />
-                  <Card.Title>{testimonial.name}</Card.Title>
-                </Card.Footer>
-              </Card.Body>
-            </Card>
+    <div className="testimonials py-5 position-relative">
+      <Container>
+        <Row className="justify-content-center">
+          <Col md={8} className="text-center">
+            <h2 className="section-title">
+              Testimoni <span className="text-primary">APA??</span>
+            </h2>
           </Col>
-        ))}
-      </Row>
-    </Container>
+        </Row>
+        <Row className="justify-content-center position-relative">
+          <Button variant="link" className="arrow-button left-arrow">
+            <img src={leftArrow} alt="Left Arrow" />
+          </Button>
+          {testimonials.map((testimonial, index) => (
+            <Col md={4} key={index}>
+              <Card className="mb-4">
+                <Card.Body>
+                  <div className="stars mb-3">
+                    {Array.from({ length: testimonial.rating }).map((_, i) => (
+                      <img src={starIcon} alt="Star" key={i} className="star-icon" />
+                    ))}
+                  </div>
+                  <Card.Text className="feedback mb-4">
+                    "{testimonial.feedback}"
+                  </Card.Text>
+                  <div className="d-flex align-items-center">
+                    <img src={testimonial.image} alt={testimonial.name} className="client-image me-3" />
+                    <div>
+                      <Card.Title className="mb-0">{testimonial.name}</Card.Title>
+                      <Card.Subtitle className="text-muted">{testimonial.role}</Card.Subtitle>
+                    </div>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+          <Button variant="link" className="arrow-button right-arrow">
+            <img src={rightArrow} alt="Right Arrow" />
+          </Button>
+        </Row>
+      </Container>
+      <img src={chatBot} alt="Chat Bot" className="chat-bot-icon" />
+    </div>
   );
 }
 

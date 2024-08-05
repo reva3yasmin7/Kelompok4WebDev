@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+/* src/styles.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-brand {
+  font-weight: bold;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #000; /* Default color */
+  transition: color 0.3s; /* Smooth transition */
+  padding: 5px 10px; /* Reduce padding for compactness */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Color on hover */
+}
+
+.navbar-nav .btn-outline-primary,
+.navbar-nav .btn-primary {
+  border-radius: 20px;
+  padding: 5px 10px; /* Adjust padding for buttons */
+  margin-left: 5px; /* Reduce margin for compactness */
+  font-size: 0.875rem; /* Adjust font size for buttons */
+}
+
+.navbar-nav .btn-outline-primary {
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.navbar-nav .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.navbar-nav .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.navbar-nav .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.hero-section {
+  background-color: #e8f4ff;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 255, 0.2); /* Blue shadow */
+  padding: 60px 0;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #212529;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #6c757d;
+  margin-top: 20px; /* Add margin to separate from vector */
+}
+
+.underline-vector img {
+  display: block;
+  margin: 10px auto; /* Center the vector image */
+}
+
+.hero-section .form-control {
+  border-radius: 20px;
+  padding: 10px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-section .btn-primary {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card-footer {
+  background: none;
+  border-top: none;
+}
+
+.card-footer .card-title {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  background-color: #007bff;
+}
+
+.footer .text-white {
+  color: #ffffff !important;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer form .form-control {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.footer form .btn-secondary {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.navbar-bordered {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0 10px;
+  max-width: 1200px; /* Limit the max width for a more compact layout */
+  margin: 0 auto; /* Center the navbar */
+}
+
+.hero-section .search-bar .btn-primary {
+  margin-left: -1px; /* Remove margin between input and button */
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.section-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.company-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.badge.bg-success {
+  background-color: #28a745 !important;
+  color: white !important;
+  padding: 0.5em 1em;
+  border-radius: 0.25rem;
 }

@@ -28,7 +28,7 @@ function CategorySearches() {
         <Row>
           <Col md={6}>
             <Row>
-              <Col md={12} className="mb-4">
+              <Col md={6} className="mb-4 mx-auto">
                 <Card className="text-center">
                   <Card.Body>
                     <img src={categories[0].icon} alt={categories[0].name} className="category-icon mb-3" />
@@ -39,7 +39,7 @@ function CategorySearches() {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col md={12}>
+              <Col md={6} className="mx-auto">
                 <Card className="text-center">
                   <Card.Body>
                     <img src={categories[2].icon} alt={categories[2].name} className="category-icon mb-3" />
@@ -54,7 +54,7 @@ function CategorySearches() {
           </Col>
           <Col md={6}>
             <Row>
-              <Col md={12} className="mb-4">
+              <Col md={6} className="mb-4 mx-auto">
                 <Card className="text-center">
                   <Card.Body>
                     <img src={categories[1].icon} alt={categories[1].name} className="category-icon mb-3" />
@@ -65,7 +65,7 @@ function CategorySearches() {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col md={12}>
+              <Col md={6} className="mx-auto">
                 <Card className="text-center">
                   <Card.Body>
                     <img src={categories[3].icon} alt={categories[3].name} className="category-icon mb-3" />

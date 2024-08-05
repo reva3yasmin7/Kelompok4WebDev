@@ -124,7 +124,9 @@ body {
   font-size: 1rem;
   margin-top: 0.5rem;
 }
-
+.mt-3{
+  margin-top: 22222 rem;
+}
 .footer {
   background-color: #007bff;
 }
@@ -157,7 +159,7 @@ body {
 
 .navbar-bordered {
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 50px;
   padding: 0 10px;
   max-width: 1200px;
   margin: 0 auto;
@@ -180,6 +182,10 @@ body {
   width: 24px;
   margin-right: 10px;
 }
+.section-title .text-primary {
+  margin-left:20px; /* Atur jarak sesuai kebutuhan */
+}
+
 
 .category-icon {
   height: 40px;
@@ -240,8 +246,8 @@ body {
 }
 
 .testimonials .star-icon {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   margin-right: 5px;
 }
 
@@ -252,3 +258,116 @@ body {
   height: 40px;
   width: 40px;
 }
+
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  z-index: 1000;
+}
+
+.chatbot-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-body {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.message.bot .message-content {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.message.user .message-content {
+  background-color: #a0d2ff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.message .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message.user .avatar {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.message-text {
+  max-width: 200px;
+}
+
+.message-timestamp {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.message-timestamp.user {
+  color: #212529;
+  font-weight: bold;
+}
+
+.chatbot-footer {
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.chatbot-footer .form-control {
+  border-radius: 20px 0 0 20px;
+}
+
+.chatbot-footer .btn-primary {
+  border-radius: 0 20px 20px 0;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.chat-bot-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.chatbot-footer .btn-primary img {
+  height: 20px;
+  width: 20px;
+}
+.custom-nav .nav-link {
+  margin: 0 15px;
+  color: black;
+  transition: color 0.3s;
+}
+
+.custom-nav .nav-link.active {
+  color: #007bff; 
+}
+
+

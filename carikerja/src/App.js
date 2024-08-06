@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import CustomNavbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -11,6 +11,7 @@ import Register from './pages/Register';
 import HRRegister from './pages/HRRegister';
 import ChatBot from './components/ChatBot';
 import Perusahaan from './pages/Perusahaan';
+import JobListings from './pages/JobListings';
 
 function App() {
   const location = useLocation();
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <>
-      {!hideNavbarAndFooter && <Navbar />}
+      {!hideNavbarAndFooter && <CustomNavbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -27,6 +28,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/hr-register" element={<HRRegister />} />
         <Route path="/perusahaan" element={<Perusahaan />} />
+        <Route path="/joblistings" element={<JobListings />} />
       </Routes>
       <ChatBot />
       {!hideNavbarAndFooter && <Footer />}

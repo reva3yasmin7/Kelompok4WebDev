@@ -31,10 +31,10 @@ function CustomNavbar() {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/jobs"
+              to="/joblistings"
               style={{
                 marginRight: '20px',
-                color: isActive('/jobs') ? 'blue' : 'black',
+                color: isActive('/joblistings') ? 'blue' : 'black',
               }}
             >
               Lowongan Kerja

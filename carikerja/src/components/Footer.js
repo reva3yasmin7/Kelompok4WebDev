@@ -2,6 +2,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import image from '../assets/carikerjafooter.png';
 
 function Footer() {
   return (
@@ -9,7 +10,11 @@ function Footer() {
       <Container>
         <Row>
           <Col md={4}>
-            <h5>carikerja</h5>
+            
+            <h5>
+            <img src={image} alt="carikerja" className="img-fluid" />
+             carikerja
+            </h5>
             <p>Platform hebat untuk pencari kerja atau bakat yang memiliki minat terhadap startup. Temukan pekerjaan impian Anda dengan lebih mudah.</p>
           </Col>
           <Col md={2}>

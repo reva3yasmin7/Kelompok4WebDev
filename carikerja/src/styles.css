@@ -411,5 +411,25 @@ body {
   color: #d1d1d1;
 }
 
+h1 {
+  color: #333;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0; /* Remove default margin */
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+a {
+  text-decoration: none; /* Menghilangkan garis bawah */
+}
 
 

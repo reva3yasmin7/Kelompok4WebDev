@@ -9,10 +9,11 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import HRRegister from './pages/HRRegister';
 import ChatBot from './components/ChatBot';
+import Perusahaan from './pages/Perusahaan'; // Import the Perusahaan component
 
 function App() {
   const location = useLocation();
-  const showNavbar = !['/login', '/register'].includes(location.pathname);
+  const showNavbar = !['/login', '/register', '/hr-register'].includes(location.pathname);
 
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/hr-register" element={<HRRegister />} />
+        <Route path="/perusahaan" element={<Perusahaan />} /> {/* Add the Perusahaan route */}
       </Routes>
       <ChatBot />
     </>

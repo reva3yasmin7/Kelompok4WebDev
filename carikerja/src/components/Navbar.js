@@ -2,15 +2,12 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/carikerja1.png'; 
+import logo from '../assets/carikerja1.png'; // Ensure the path to your logo is correct
 
 function CustomNavbar() {
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
 
-  // Function to check if the path matches the current location
-  const isActive = (path) => {
-    return location.pathname === path;
-  };
+  const isActive = (path) => location.pathname === path;
 
   return (
     <Navbar bg="white" expand="lg" className="py-3 shadow-sm navbar-bordered">
@@ -24,10 +21,10 @@ function CustomNavbar() {
           <Nav className="me-auto custom-nav" style={{ marginLeft: 'auto' }}>
             <Nav.Link
               as={Link}
-              to="/"
+              to="/perusahaan"
               style={{
                 marginRight: '20px',
-                color: isActive('/') ? 'blue' : 'black', // Apply color based on active state
+                color: isActive('/perusahaan') ? 'blue' : 'black',
               }}
             >
               Perusahaan
@@ -37,7 +34,7 @@ function CustomNavbar() {
               to="/jobs"
               style={{
                 marginRight: '20px',
-                color: isActive('/jobs') ? 'blue' : 'black', // Apply color based on active state
+                color: isActive('/jobs') ? 'blue' : 'black',
               }}
             >
               Lowongan Kerja
@@ -46,7 +43,7 @@ function CustomNavbar() {
               as={Link}
               to="/about"
               style={{
-                color: isActive('/about') ? 'blue' : 'black', // Apply color based on active state
+                color: isActive('/about') ? 'blue' : 'black',
               }}
             >
               Tentang
@@ -80,4 +77,5 @@ function CustomNavbar() {
     </Navbar>
   );
 }
+
 export default CustomNavbar;

@@ -4,7 +4,7 @@ import HeroSection from '../components/HeroSection';
 import RecentSearches from '../components/RecentSearches';
 import CategorySearches from '../components/CategorySearches';
 import Testimonials from '../components/Testimonials';
-import Footer from '../components/Footer';
+
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
       <RecentSearches />
       <CategorySearches />
       <Testimonials />
-      <Footer />
+    
     </div>
   );
 }

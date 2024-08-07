@@ -12,6 +12,7 @@ import HRRegister from './pages/HRRegister';
 import ChatBot from './components/ChatBot';
 import Perusahaan from './pages/Perusahaan';
 import JobListings from './pages/JobListings';
+import Terms from './pages/Terms'; // Import the Terms component
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/hr-register" element={<HRRegister />} />
         <Route path="/perusahaan" element={<Perusahaan />} />
         <Route path="/joblistings" element={<JobListings />} />
+        <Route path="/terms" element={<Terms />} />
         
       </Routes>
       <ChatBot />

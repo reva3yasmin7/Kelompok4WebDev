@@ -6,18 +6,19 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Login from './pages/Login'; // Import the Login component
+import Login from './pages/Login';
 import Register from './pages/Register';
 import HRRegister from './pages/HRRegister';
 import ChatBot from './components/ChatBot';
 import Perusahaan from './pages/Perusahaan';
 import JobListings from './pages/JobListings';
-import Terms from './pages/Terms'; // Import the Terms component
-
+import Terms from './pages/Terms';
+import ForgotPassword from './pages/ForgotPassword';
+import PasswordResetConfirmation from './pages/PasswordResetConfirmation';
 
 function App() {
   const location = useLocation();
-  const hideNavbarAndFooter = ['/login', '/register', '/hr-register'].includes(location.pathname);
+  const hideNavbarAndFooter = ['/login', '/register', '/hr-register', '/forgot-password', '/password-reset-confirmation'].includes(location.pathname);
 
   return (
     <>
@@ -26,13 +27,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} /> {/* Add the login route here */}
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/hr-register" element={<HRRegister />} />
         <Route path="/perusahaan" element={<Perusahaan />} />
         <Route path="/joblistings" element={<JobListings />} />
         <Route path="/terms" element={<Terms />} />
-        
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/password-reset-confirmation" element={<PasswordResetConfirmation />} />
       </Routes>
       <ChatBot />
       {!hideNavbarAndFooter && <Footer />}

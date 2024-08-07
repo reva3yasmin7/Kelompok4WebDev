@@ -15,7 +15,7 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!acceptTerms) {
-      alert('Please accept the terms and conditions.');
+      alert('jangan lupa klik checkboxnya ya 👌.');
       return;
     }
     console.log('Form submitted:', { fullName, email, password });

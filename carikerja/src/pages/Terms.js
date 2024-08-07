@@ -104,12 +104,124 @@ Anda setuju untuk tidak menyalin, mendistribusikan, mempublikasikan ulang, mengi
           2.8. Terkait penggunaan Anda atas Platform atau Layanan, atau selama interaksi Anda dengan imuni, Pelanggan lain, Penyedia Layanan, atau pihak ketiga lain apa pun melalui Platform, Anda dilarang:
 
           </p>
+          <p>
+          (i).  Melanggar Syarat dan Ketentuan, Kebijakan Privasi, atau kebijakan lain apa pun yang ada di Platform ini;
+
+          </p>
+          <p>
+          (ii). Melanggar hukum, peraturan, atau hak pihak ketiga mana pun;
+
+          </p>
+          <p>
+          (iii). Melanggar hak cipta, paten, merek dagang, rahasia dagang, hak kekayaan intelektual apa pun, hak publisitas atau privasi dari imuni atau pihak ketiga mana pun;
+
+          </p>
+          <p>
+          (iv). Melakukan tindakan yang mencemarkan, memfitnah, mengancam, atau melecehkan;
+
+          </p>
+          <p>
+          (v).  Memberikan informasi yang salah, palsu, tidak akurat, atau menyesatkan;
+
+          </p>
+          <p>
+          (vi). Menolak secara tidak wajar untuk bekerja sama dalam penyelidikan yang dilakukan oleh imuni atau memberikan konfirmasi mengenai identitas Anda atau informasi lain yang diminta oleh Cari Kerja
+
+          </p>
+          <p>
+          (vii). Mengontrol akun pelanggan yang terhubung dengan cara apapun ke akun lain yang telah atau diduga melakukan aktivitas apa pun yang dilarang di bawah Syarat dan Ketentuan ini;
+
+
+          </p>
+          <p>
+          (viii).  Menggunakan Platform sebagai sarana untuk menyebarkan iklan dan materi lain apa pun yang tidak diinginkan kepada pihak ketiga, mengirimkan surat berantai atau skema piramida, atau memublikasikan konten yang sama lebih dari sekali (spam);
+
+
+          </p>
+          <p>
+          (ix). Menggunakan Platform, akun Anda, atau Layanan dengan cara yang mengakibatkan atau dapat mengakibatkan keluhan, perselisihan, tuntutan, denda, penalti, dan tanggung jawab lain kepada imuni, Pelanggan lain, Penyedia Layanan, atau pihak ketiga;
+
+
+          </p>
+          <p>
+   
+(x).  Mengambil tindakan apa pun yang memaksakan beban berat yang tidak wajar atau tidak proporsional ke infrastruktur kami atau tindakan lain yang dapat mengakibatkan risiko atau masalah material untuk infrastruktur kami;
+
+
+          </p>
+          <p>
+          (xi).  Menyebarkan virus, trojan horse, worm, atau teknologi pemrograman komputer lain yang dapat membahayakan Platform, kepentingan, atau properti apa pun dari Pelanggan lain, Penyedia Layanan, dan pihak ketiga mana pun, termasuk pengguna lain di Platform dan Layanan;
+
+
+          </p>
+          <p>
+          (xii). Berusaha memperoleh akses yang tidak sah ke atau mengganggu atau menghalangi sistem atau jaringan komputer lain yang terhubung ke Platform atau Layanan;
+
+
+          </p>
+          <p>
+          (xiii). Menyebarkan atau mempromosikan materi tidak senonoh, pornografi, atau menyinggung atau materi lain yang bertentangan dengan kebijakan publik dan/atau hukum atau peraturan apapun yang berlaku;
+
+          </p>
+          <p>
+          (xiv). Akibat tindakan atau kelalaian Anda, melakukan apa pun yang dapat menyebabkan kami kehilangan layanan apa pun dari penyedia layanan internet, pemroses pembayaran, atau penyedia       kami lainnya.
+
+          </p>
+          <p>
+          (xv). Mengganggu penggunaan dan kenyamanan pengguna lain atas Platform atau Layanan; atau
+          </p>
+          <p>
+          (xvi). Memfasilitasi aktivitas ilegal, tidak sah, atau penipuan berbentuk apa pun.
+          </p>
+          <p>
+          2.9. Apabila kami memiliki alasan untuk menduga bahwa Anda terlibat dalam aktivitas apa pun yang dilarang, sesuai yang ditetapkan dalam klausa 2.8 di atas, kami dapat, tanpa tanggung jawab kepada Anda, mengambil tindakan berikut:
+
+          </p>
+          <p>
+          (i). Melaporkan aktivitas mencurigakan atau ilegal apa pun ke otoritas yang relevan;
+          </p>
+          <p>
+          (ii). Membatalkan atau menolak transaksi apa pun;
+          </p>
          
+          <p>
+          (iii). Menangguhkan atau menutup akun Pelanggan Anda;(iii). Menangguhkan atau menutup akun Pelanggan Anda;
+          </p>
+         
+          <p>
+          (iv). Menerapkan, sesuai kebijaksanaan tunggal kami, prosedur pencegahan dan deteksi serta menolak pelaksanaan transaksi apabila ada dasar untuk menduga bahwa akun Pelanggan digunakan atau mungkin digunakan untuk tujuan yang ilegal, tidak sah, atau penipuan; atau
+          </p>
+         
+          <p>
+       
+(v). Mengambil langkah lebih lanjut sesuai yang dianggap perlu oleh imuni, sesuai kebijaksanaan tunggal kami, termasuk mengambil langkah hukum terhadap Anda.
+          </p>
+         
+          <p>
+       
+2.10. Apabila kami menutup akun Pelanggan Anda, kami akan memberikan pemberitahuan penutupan secara tertulis segera setelah dapat dilakukan.
+          </p>
+         
+          <p>
+          2.11. Apabila terjadi penangguhan akun Pelanggan Anda, kami akan menginformasikan penangguhan kepada Anda, ketika memungkinkan, dan memberikan Anda kesempatan untuk meminta pemulihan akses jika dan saat sesuai. Pemulihan akses apapun merupakan kebijaksanaan Cari Kerjadan harus mematuhi kebijakan dan prosedur imuni sekaligus hukum yang berlaku.
+          </p>
+        
           <h3>3. PENDAFTARAN DAN INFORMASI AKUN</h3>
           <p>
-            Pengguna diharuskan untuk memberikan informasi yang akurat, terkini, dan lengkap, yang ditetapkan dalam klausul 2.8 di atas, akan tetapi, jika tidak, tanpa tanggung jawab kepada Anda, mengambil tindakan berikut:
+          (i). Proses pendaftaran mewajibkan Anda untuk memberikan informasi pribadi yang akurat, terkini, dan lengkap, yang mungkin kami minta dari Anda dari waktu ke waktu, termasuk tetapi tidak terbatas pada nama, alamat, nomor telepon, tanggal lahir, catatan medis, dan alamat email kepada kami. Apabila terdapat perubahan apa pun dalam informasi Anda, harap menghubungi Cari Kerja secepat mungkin.
           </p>
-          {/* Continue with the rest of the terms and privacy policy content */}
+          <p>
+          (ii). Kami dapat meminta informasi atau dokumentasi tambahan kapan pun untuk memverifikasi identitas, umur, dan/atau memverifikasi detail bank atau debit, kredit, fasilitas prabayar Anda,   seperti kartu yang didaftarkan kepada kami. Anda menyetujui bahwa Anda akan memberikan informasi dan/atau dokumentasi dengan cepat kepada kami sesuai permintaan. Jika Anda tidak memberikan informasi dan/atau dokumentasi dengan cepat, kami dapat, tanpa tanggung jawab kepada Anda, membatasi penggunaan Anda atas Layanan atau menangguhkan atau menutup  akun Anda.
+
+          </p>
+          <p>
+      
+(iii). Hanya Anda yang dapat menggunakan akun Anda sendiri, dan Anda berusaha untuk tidak memberikan wewenang kepada pihak lain untuk menggunakan identitas atau akun Anda. Anda tidak boleh mengalihkan atau memindahkan akun Anda ke pihak lain. Anda harus menjaga agar kata sandi akun dan identifikasi apa pun yang kami berikan kepada Anda tetap aman dan  rahasia. Apabila kata sandi Anda diungkapkan ke pihak ketiga mana pun dan pengungkapan tersebut mengakibatkan penggunaan akun atau identitas secara ilegal, perintah yang diberikan dari penggunaan secara ilegal atau tidak sah tersebut akan tetap dianggap sebagai perintah yang valid, kecuali Anda dapat menunjukkan bahwa pengungkapan tersebut tidak disebabkan oleh tindakan, kecerobohan, kelalaian, dan/atau kelengahan Anda.
+          </p>
+          <p>
+          (iv). Semua data pribadi yang diberikan kepada Cari Kerja akan dikumpulkan, ditangani, disimpan, dan diproses sesuai dengan Kebijakan Privasi Cari Kerja. Dengan menerima Syarat dan Ketentuan ini, Anda juga setuju untuk memberikan izin sesuai yang dibutuhkan di bawah Kebijakan Privasi kami.
+          </p>
+         
         </Col>
       </Row>
       

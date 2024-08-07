@@ -21,8 +21,8 @@ function Footer() {
             <h6>About</h6>
             <ul className="list-unstyled">
               <li><a href="#!" className="text-white">Developer</a></li>
-              <li><a href="#!" className="text-white">Terms</a></li>
-              <li><a href="#!" className="text-white">Privacy Policy</a></li>
+              <br></br>
+              <li><a href="/terms" className="text-white">Terms & Privacy Policy</a></li>
             </ul>
           </Col>
           <Col md={2}>

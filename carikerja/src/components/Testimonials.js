@@ -3,7 +3,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import starIcon from '../assets/star 1.png'; // Ensure this path is correct
 import leftArrow from '../assets/left-arrow.svg';
-import rightArrow from '../assets/right-arrow.svg';
+
 
 import fediImage from '../assets/fedi.png';
 import ahmadImage from '../assets/ahmad.png';

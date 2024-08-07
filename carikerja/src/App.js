@@ -15,10 +15,12 @@ import JobListings from './pages/JobListings';
 import Terms from './pages/Terms';
 import ForgotPassword from './pages/ForgotPassword';
 import PasswordResetConfirmation from './pages/PasswordResetConfirmation';
+import HRLogin from './pages/HRLogin';
+import RegistrationConfirmation from './pages/RegistrationConfirmation';
 
 function App() {
   const location = useLocation();
-  const hideNavbarAndFooter = ['/login', '/register', '/hr-register', '/forgot-password', '/password-reset-confirmation'].includes(location.pathname);
+  const hideNavbarAndFooter = ['/login', '/register', '/hr-register', '/forgot-password', '/password-reset-confirmation', '/HRLogin', '/registration-confirmation'].includes(location.pathname);
 
   return (
     <>
@@ -35,6 +37,8 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/password-reset-confirmation" element={<PasswordResetConfirmation />} />
+        <Route path="/HRLogin" element={<HRLogin />} />
+        <Route path="/registration-confirmation" element={<RegistrationConfirmation />} />
       </Routes>
       <ChatBot />
       {!hideNavbarAndFooter && <Footer />}

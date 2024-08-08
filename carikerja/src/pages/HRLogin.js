@@ -50,7 +50,7 @@ const HRLogin = () => {
               <Button variant="primary" type="submit" className="w-100 mt-3">
                 Masuk
               </Button>
-              <Button variant="secondary" className="w-100 mt-2" onClick={() => navigate('/')}>
+              <Button variant="secondary" className="w-100 mt-2" onClick={() => navigate('/company-register')}>
                 Daftarkan Perusahaan
               </Button>
             </Form>

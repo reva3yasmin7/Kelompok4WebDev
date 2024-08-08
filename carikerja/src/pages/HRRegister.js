@@ -71,7 +71,7 @@ const HRRegister = () => {
             <div className="text-center mt-3">
               <small>
                 Dengan mengklik 'Daftar', Anda menyatakan bahwa Anda telah membaca dan menerima
-                <a href="/terms"> Ketentuan Layanan</a> dan <a href="/privacy"> Kebijakan Privasi</a>.
+                <a href="/terms"> Ketentuan Layanan</a> dan <a href="/terms"> Kebijakan Privasi</a>.
               </small>
             </div>
           </div>

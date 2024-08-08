@@ -17,10 +17,11 @@ import ForgotPassword from './pages/ForgotPassword';
 import PasswordResetConfirmation from './pages/PasswordResetConfirmation';
 import HRLogin from './pages/HRLogin';
 import RegistrationConfirmation from './pages/RegistrationConfirmation';
+import CompanyRegister from './pages/CompanyRegister';
 
 function App() {
   const location = useLocation();
-  const hideNavbarAndFooter = ['/login', '/register', '/hr-register', '/forgot-password', '/password-reset-confirmation', '/HRLogin', '/registration-confirmation'].includes(location.pathname);
+  const hideNavbarAndFooter = ['/login', '/register', '/hr-register', '/forgot-password', '/password-reset-confirmation', '/HRLogin', '/registration-confirmation', '/company-register'].includes(location.pathname);
 
   return (
     <>
@@ -39,6 +40,7 @@ function App() {
         <Route path="/password-reset-confirmation" element={<PasswordResetConfirmation />} />
         <Route path="/HRLogin" element={<HRLogin />} />
         <Route path="/registration-confirmation" element={<RegistrationConfirmation />} />
+        <Route path="/company-register" element={<CompanyRegister />} />
       </Routes>
       <ChatBot />
       {!hideNavbarAndFooter && <Footer />}

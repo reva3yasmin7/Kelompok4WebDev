@@ -1,10 +1,10 @@
 // src/pages/Perusahaan.js
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft, FaCalendarAlt, FaUsers, FaMapMarkerAlt, FaIndustry } from 'react-icons/fa';
-import ptsukajayaLogo from '../assets/sukajaya.png'; // Use the actual path to your image
-import danoneLogo from '../assets/danone.png'; // Use the actual path to your image
+import ptsukajayaLogo from '../assets/sukajaya.png'; // Ganti dengan path gambar yang sesuai
+import danoneLogo from '../assets/danone.png'; // Ganti dengan path gambar yang sesuai
 
 const companies = [
   {
@@ -53,6 +53,10 @@ function Perusahaan() {
                   <Col md={3}><FaMapMarkerAlt className="me-2" /><strong>Lokasi:</strong> {company.locations}</Col>
                   <Col md={3}><FaIndustry className="me-2" /><strong>Industri:</strong> {company.industry}</Col>
                 </Row>
+                {/* Tambahkan tombol untuk melihat detail perusahaan */}
+                <Link to={`/daftar-deskripsi-perusahaan/${company.id}`}>
+                  <Button variant="primary" className="mt-3">Lihat Detail</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>

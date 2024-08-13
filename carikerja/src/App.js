@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import CustomNavbar from './components/Navbar';
@@ -18,7 +17,8 @@ import PasswordResetConfirmation from './pages/PasswordResetConfirmation';
 import HRLogin from './pages/HRLogin';
 import RegistrationConfirmation from './pages/RegistrationConfirmation';
 import CompanyRegister from './pages/CompanyRegister';
-
+import DaftarDeskripsiPerusahaan from './pages/DaftarDeskripsiPerusahaan';
+import DetailPekerjaan from './pages/DetailPekerjaan'; 
 function App() {
   const location = useLocation();
   const hideNavbarAndFooter = ['/login', '/register', '/hr-register', '/forgot-password', '/password-reset-confirmation', '/HRLogin', '/registration-confirmation', '/company-register'].includes(location.pathname);
@@ -41,6 +41,8 @@ function App() {
         <Route path="/HRLogin" element={<HRLogin />} />
         <Route path="/registration-confirmation" element={<RegistrationConfirmation />} />
         <Route path="/company-register" element={<CompanyRegister />} />
+        <Route path="/daftar-deskripsi-perusahaan/:id" element={<DaftarDeskripsiPerusahaan />} />
+        <Route path="/detail-pekerjaan/:id" element={<DetailPekerjaan />} /> {/* Tambahkan rute ini */}
       </Routes>
       <ChatBot />
       {!hideNavbarAndFooter && <Footer />}

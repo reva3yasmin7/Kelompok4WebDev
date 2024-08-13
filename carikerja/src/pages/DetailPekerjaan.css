@@ -1,0 +1,29 @@
+/* src/pages/DetailPekerjaan.css */
+
+.detail-pekerjaan .detail-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .detail-pekerjaan .job-title {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .detail-pekerjaan .save-icon {
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .detail-pekerjaan .save-icon.saved {
+    color: #007bff;
+  }
+  
+  .detail-pekerjaan .btn-daftar {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+  

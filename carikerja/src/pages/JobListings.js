@@ -2,10 +2,11 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaArrowLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa'; 
-import { useNavigate, Link } from 'react-router-dom'; // Importing Link for navigation
+import { useNavigate, Link } from 'react-router-dom';
 
 function JobListings() {
   const [currentPage, setCurrentPage] = useState(1);
+  const jobsPerPage = 2; // Define how many jobs to show per page
   const navigate = useNavigate();
 
   const jobs = [
@@ -25,8 +26,28 @@ function JobListings() {
       type: "Part-Time",
       tags: ["Jasa", "Elektronik"],
     },
-    // Tambahkan pekerjaan lain sesuai kebutuhan
+    {
+      id: 3,
+      title: "Software Engineer",
+      company: "PT. Tech Solutions",
+      location: "Jakarta, Indonesia",
+      type: "Full-Time",
+      tags: ["IT", "Pengembangan"],
+    },
+    {
+      id: 4,
+      title: "Marketing Specialist",
+      company: "PT. Market Maker",
+      location: "Bandung, Indonesia",
+      type: "Part-Time",
+      tags: ["Pemasaran"],
+    },
   ];
+
+  const totalPages = Math.ceil(jobs.length / jobsPerPage);
+  const indexOfLastJob = currentPage * jobsPerPage;
+  const indexOfFirstJob = indexOfLastJob - jobsPerPage;
+  const currentJobs = jobs.slice(indexOfFirstJob, indexOfLastJob);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -48,8 +69,8 @@ function JobListings() {
       </Row>
 
       <Row className="flex-grow-1">
-        {currentPage === 1 ? (
-          jobs.map((job) => (
+        {currentJobs.length > 0 ? (
+          currentJobs.map((job) => (
             <Col md={6} lg={4} key={job.id} className="mb-4">
               <Card>
                 <Card.Body>
@@ -90,41 +111,35 @@ function JobListings() {
             variant="outline-primary" 
             className="me-2" 
             onClick={() => handlePageChange(currentPage > 1 ? currentPage - 1 : 1)}
+            disabled={currentPage === 1}
           >
             <FaChevronLeft />
           </Button>
+
+          {/* Create buttons for each page */}
+          {[...Array(totalPages)].map((_, index) => (
+            <Button 
+              key={index + 1} 
+              variant={currentPage === index + 1 ? "primary" : "outline-primary"} 
+              className="me-2" 
+              onClick={() => handlePageChange(index + 1)}
+            >
+              {index + 1}
+            </Button>
+          ))}
+
           <Button 
-            variant={currentPage === 1 ? "primary" : "outline-primary"} 
+            variant="outline-primary" 
             className="me-2" 
-            onClick={() => handlePageChange(1)}
-            >
-              1
-            </Button>
-            <Button 
-              variant={currentPage === 2 ? "primary" : "outline-primary"} 
-              className="me-2" 
-              onClick={() => handlePageChange(2)}
-            >
-              2
-            </Button>
-            <Button 
-              variant={currentPage === 3 ? "primary" : "outline-primary"} 
-              className="me-2" 
-              onClick={() => handlePageChange(3)}
-            >
-              3
-            </Button>
-            <Button 
-              variant="outline-primary" 
-              className="me-2" 
-              onClick={() => handlePageChange(currentPage < 3 ? currentPage + 1 : 3)}
-            >
-              <FaChevronRight />
-            </Button>
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
-  
-  export default JobListings;
+            onClick={() => handlePageChange(currentPage < totalPages ? currentPage + 1 : totalPages)}
+            disabled={currentPage === totalPages}
+          >
+            <FaChevronRight />
+          </Button>
+        </Col>
+      </Row>
+    </Container>
+  );
+}
+
+export default JobListings;

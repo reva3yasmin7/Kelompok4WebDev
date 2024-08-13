@@ -15,6 +15,7 @@ function DetailPekerjaan() {
   const navigate = useNavigate(); // Initialize useNavigate
   const [jobData, setJobData] = useState(null);
   const [isSaved, setIsSaved] = useState(false);
+  
 
   useEffect(() => {
     setJobData({
@@ -175,14 +176,27 @@ function DetailPekerjaan() {
         </Col>
       </Row>
 
-      {/* Footer Section */}
-      <Row className="mt-5">
-        <Col>
-          <img src={logo} alt="Logo Perusahaan" className="img-fluid mb-3" style={{ width: '100px' }} />
-          <h4>{jobData.company}</h4>
-          <p>PT. Suka Jaya adalah pabrik industri yang berbasis di Medan yang terkenal dengan produk berkualitas tinggi dan komitmennya terhadap praktik manufaktur yang berkelanjutan.</p>
-        </Col>
-      </Row>
+     {/* Footer Section */}
+     <Row className="mt-5">
+  <Col>
+    <img src={logo} alt="Logo Perusahaan" className="img-fluid mb-3" style={{ width: '100px' }} />
+    <h4>{jobData.company}</h4>
+    <p>PT. Suka Jaya adalah pabrik industri yang berbasis di Medan yang terkenal dengan produk berkualitas tinggi dan komitmennya terhadap praktik manufaktur yang berkelanjutan.</p>
+    
+    {/* New Section for More Information */}
+    <p>
+      <strong>Selengkapnya tentang PT. Suka Jaya</strong>
+    </p>
+    <p>
+      PT. Suka Jaya berkomitmen untuk menyediakan lingkungan kerja yang aman dan produktif. Kami percaya bahwa inovasi dan keberlanjutan adalah kunci untuk masa depan yang lebih baik.
+    </p>
+    
+    {/* Button to Learn More */}
+    <div className="text-end">
+      <Button variant="primary">Pelajari Lebih Lanjut</Button>
+    </div>
+  </Col>
+</Row>
     </Container>
   );
 }

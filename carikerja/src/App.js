@@ -19,9 +19,14 @@ import RegistrationConfirmation from './pages/RegistrationConfirmation';
 import CompanyRegister from './pages/CompanyRegister';
 import DaftarDeskripsiPerusahaan from './pages/DaftarDeskripsiPerusahaan';
 import DetailPekerjaan from './pages/DetailPekerjaan'; 
+import RequireLogin from './pages/RequireLogin';
+
+
 function App() {
   const location = useLocation();
   const hideNavbarAndFooter = ['/login', '/register', '/hr-register', '/forgot-password', '/password-reset-confirmation', '/HRLogin', '/registration-confirmation', '/company-register'].includes(location.pathname);
+  
+  
 
   return (
     <>
@@ -43,6 +48,8 @@ function App() {
         <Route path="/company-register" element={<CompanyRegister />} />
         <Route path="/daftar-deskripsi-perusahaan/:id" element={<DaftarDeskripsiPerusahaan />} />
         <Route path="/detail-pekerjaan/:id" element={<DetailPekerjaan />} /> {/* Tambahkan rute ini */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/require-login" element={<RequireLogin />} />
       </Routes>
       <ChatBot />
       {!hideNavbarAndFooter && <Footer />}

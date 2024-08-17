@@ -1,21 +1,18 @@
-// src/pages/DetailPekerjaan.js
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Button, Badge } from 'react-bootstrap';
-import { useParams, useNavigate } from 'react-router-dom'; // Import useNavigate instead of useHistory
+import { useParams, useNavigate } from 'react-router-dom';
 import { FaClock, FaMapMarkerAlt, FaCheck } from 'react-icons/fa';
-import { BsFillBookmarkFill, BsBookmark } from 'react-icons/bs';
+import { BsBookmark } from 'react-icons/bs';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import logo from '../assets/sukajaya.png'; // Replace with the correct path to the company logo
-
-import './DetailPekerjaan.css'; // Add custom styles
+import logo from '../assets/sukajaya.png';
+import './DetailPekerjaan.css';
 
 function DetailPekerjaan() {
   const { id } = useParams();
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
   const [jobData, setJobData] = useState(null);
   const [isSaved, setIsSaved] = useState(false);
-  
 
   useEffect(() => {
     setJobData({
@@ -49,7 +46,7 @@ function DetailPekerjaan() {
   }, [id]);
 
   const handleSaveClick = () => {
-    setIsSaved(!isSaved);
+    setIsSaved((prevSaved) => !prevSaved);
     toast.info(`Job ${isSaved ? 'unsaved' : 'saved'}!`, {
       position: "top-right",
       autoClose: 2000,
@@ -62,19 +59,21 @@ function DetailPekerjaan() {
   };
 
   const handleBackClick = () => {
-    navigate(-1); // Use navigate(-1) to go back to the previous page
+    navigate(-1);
+  };
+
+  const handleDaftarClick = () => {
+    navigate('/require-login'); // Redirect to RequireLogin page
   };
 
   if (!jobData) {
-    return <p>Loading...</p>; // Loading state
+    return <p>Loading...</p>;
   }
 
   return (
     <Container className="detail-pekerjaan my-5">
-      {/* Toast Container for Notifications */}
       <ToastContainer />
 
-      {/* Header Section with Back Button and Title */}
       <Row className="align-items-center mb-4">
         <Col md={4}>
           <Button variant="outline-primary" onClick={handleBackClick}>Kembali</Button>
@@ -83,11 +82,12 @@ function DetailPekerjaan() {
           <h2 className="detail-title">Detail Pekerjaan</h2>
         </Col>
         <Col md={4} className="text-end">
-          <Button variant="primary" className="btn-daftar">Daftar</Button>
+          <Button variant="primary" className="btn-daftar" onClick={handleDaftarClick}>
+            Daftar
+          </Button>
         </Col>
       </Row>
 
-      {/* Job Title Section */}
       <Row className="align-items-center mb-4">
         <Col md={8}>
           <h1 className="job-title d-flex align-items-center">
@@ -106,16 +106,13 @@ function DetailPekerjaan() {
         </Col>
       </Row>
 
-      {/* Rest of the Content */}
       <Row>
         <Col md={8}>
-          {/* Deskripsi Section */}
           <section className="mb-4">
             <h2>Deskripsi</h2>
             <p>{jobData.description}</p>
           </section>
 
-          {/* Tanggung Jawab Section */}
           <section className="mb-4">
             <h2>Tanggung Jawab</h2>
             <ul className="list-unstyled">
@@ -125,7 +122,6 @@ function DetailPekerjaan() {
             </ul>
           </section>
 
-          {/* Keterampilan Section */}
           <section className="mb-4">
             <h2>Keterampilan yang Dibutuhkan</h2>
             <ul className="list-unstyled">
@@ -135,17 +131,6 @@ function DetailPekerjaan() {
             </ul>
           </section>
 
-          {/* Personal Traits Section */}
-          <section className="mb-4">
-            <h2>Bagaimana Anda</h2>
-            <ul className="list-unstyled">
-              <li className="mb-2"><FaCheck className="me-2" /> Orang yang teliti dan detail</li>
-              <li className="mb-2"><FaCheck className="me-2" /> Semangat belajar yang tinggi</li>
-              <li className="mb-2"><FaCheck className="me-2" /> Etos kerja yang baik dan bertanggung jawab</li>
-            </ul>
-          </section>
-
-          {/* Tunjangan Section */}
           <section>
             <h2>Tunjangan & Benefit</h2>
             <Row>
@@ -158,7 +143,6 @@ function DetailPekerjaan() {
           </section>
         </Col>
 
-        {/* Sidebar Content */}
         <Col md={4}>
           <section className="mb-4">
             <h5 className="text-muted">Tentang posisi ini</h5>
@@ -176,27 +160,19 @@ function DetailPekerjaan() {
         </Col>
       </Row>
 
-     {/* Footer Section */}
-     <Row className="mt-5">
-  <Col>
-    <img src={logo} alt="Logo Perusahaan" className="img-fluid mb-3" style={{ width: '100px' }} />
-    <h4>{jobData.company}</h4>
-    <p>PT. Suka Jaya adalah pabrik industri yang berbasis di Medan yang terkenal dengan produk berkualitas tinggi dan komitmennya terhadap praktik manufaktur yang berkelanjutan.</p>
-    
-    {/* New Section for More Information */}
-    <p>
-      <strong>Selengkapnya tentang PT. Suka Jaya</strong>
-    </p>
-    <p>
-      PT. Suka Jaya berkomitmen untuk menyediakan lingkungan kerja yang aman dan produktif. Kami percaya bahwa inovasi dan keberlanjutan adalah kunci untuk masa depan yang lebih baik.
-    </p>
-    
-    {/* Button to Learn More */}
-    <div className="text-end">
-      <Button variant="primary">Pelajari Lebih Lanjut</Button>
-    </div>
-  </Col>
-</Row>
+      <Row className="mt-5">
+        <Col>
+          <img src={logo} alt="Logo Perusahaan" className="img-fluid mb-3" style={{ width: '100px' }} />
+          <h4>{jobData.company}</h4>
+          <p>PT. Suka Jaya adalah pabrik industri yang berbasis di Medan yang terkenal dengan produk berkualitas tinggi dan komitmennya terhadap praktik manufaktur yang berkelanjutan.</p>
+          <p>
+            <strong>Selengkapnya tentang PT. Suka Jaya</strong>
+          </p>
+          <div className="text-end">
+            <Button variant="primary">Pelajari Lebih Lanjut</Button>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 }

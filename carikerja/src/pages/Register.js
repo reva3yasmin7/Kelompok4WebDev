@@ -18,7 +18,18 @@ const Register = () => {
       alert('jangan lupa klik checkboxnya ya 👌.');
       return;
     }
-    console.log('Form submitted:', { fullName, email, password });
+    
+    // Simpan data pengguna ke local storage
+    const userData = {
+      fullName,
+      email,
+      password,
+    };
+    
+    localStorage.setItem('userData', JSON.stringify(userData));
+  
+    console.log('Form submitted:', userData);
+    alert('Pendaftaran berhasil! Silakan masuk.');
   };
 
   return (

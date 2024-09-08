@@ -33,6 +33,7 @@ const CompanyRegister = () => {
 
   const handleFileChange = (e, setter) => {
     setter(e.target.files[0]);
+    
   };
 
   return (

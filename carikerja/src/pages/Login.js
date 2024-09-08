@@ -12,7 +12,21 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', { email, password });
+  
+    // Ambil data pengguna dari local storage
+    const storedUserData = JSON.parse(localStorage.getItem('userData'));
+  
+    if (storedUserData) {
+      // Cek apakah email dan password cocok
+      if (storedUserData.email === email && storedUserData.password === password) {
+        alert('Login berhasil! Selamat datang, ' + storedUserData.fullName);
+        // Redirect ke halaman utama atau halaman dashboard
+      } else {
+        alert('Email atau kata sandi salah. Silakan coba lagi.');
+      }
+    } else {
+      alert('Tidak ada akun terdaftar. Silakan daftar terlebih dahulu.');
+    }
   };
 
   return (

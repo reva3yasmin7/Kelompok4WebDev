@@ -1,9 +1,8 @@
-// src/components/Testimonials.js
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import starIcon from '../assets/star 1.png'; // Ensure this path is correct
+import { motion } from 'framer-motion'; // Import motion for animations
+import starIcon from '../assets/star 1.png'; 
 import leftArrow from '../assets/left-arrow.svg';
-
 
 import fediImage from '../assets/fedi.png';
 import ahmadImage from '../assets/ahmad.png';
@@ -33,6 +32,11 @@ const testimonials = [
   },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },  // Initially hidden
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }, // Animate to visible
+};
+
 function Testimonials() {
   return (
     <div className="testimonials py-5 position-relative">
@@ -40,7 +44,7 @@ function Testimonials() {
         <Row className="justify-content-center">
           <Col md={8} className="text-center">
             <h2 className="section-title">
-               <span className="text-primary">Testimoni</span>
+              <span className="text-primary">Testimoni</span>
             </h2>
           </Col>
         </Row>
@@ -50,28 +54,34 @@ function Testimonials() {
           </Button>
           {testimonials.map((testimonial, index) => (
             <Col md={4} key={index}>
-              <Card className="mb-4">
-                <Card.Body>
-                  <div className="stars mb-3">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <img src={starIcon} alt="Star" key={i} className="star-icon" />
-                    ))}
-                  </div>
-                  <Card.Text className="feedback mb-4">
-                    "{testimonial.feedback}"
-                  </Card.Text>
-                  <div className="d-flex align-items-center">
-                    <img src={testimonial.image} alt={testimonial.name} className="client-image me-3" />
-                    <div>
-                      <Card.Title className="mb-0">{testimonial.name}</Card.Title>
-                      <Card.Subtitle className="text-muted">{testimonial.role}</Card.Subtitle>
+              {/* Wrap each Card in a motion.div for animation */}
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={cardVariants}
+              >
+                <Card className="mb-4">
+                  <Card.Body>
+                    <div className="stars mb-3">
+                      {Array.from({ length: testimonial.rating }).map((_, i) => (
+                        <img src={starIcon} alt="Star" key={i} className="star-icon" />
+                      ))}
                     </div>
-                  </div>
-                </Card.Body>
-              </Card>
+                    <Card.Text className="feedback mb-4">
+                      "{testimonial.feedback}"
+                    </Card.Text>
+                    <div className="d-flex align-items-center">
+                      <img src={testimonial.image} alt={testimonial.name} className="client-image me-3" />
+                      <div>
+                        <Card.Title className="mb-0">{testimonial.name}</Card.Title>
+                        <Card.Subtitle className="text-muted">{testimonial.role}</Card.Subtitle>
+                      </div>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </motion.div>
             </Col>
           ))}
-          
         </Row>
       </Container>
     </div>
